@@ -1,0 +1,20 @@
+{
+  "entryPoint": "images.jpeg.js",
+  "name": "silly cat",
+  "description": "yes",
+  "tags": [
+    "yes"
+  ],
+  "category": "cookie-cutters",
+  "images": [
+    {
+      "path": "images/cat.webp",
+      "isPrimary": true
+    }
+  ],
+  "metadata": {
+    "createdAt": "2026-10-29T12:56:35.347Z",
+    "createdWith": "cadit-web",
+    "designId": "NvJBQE4xsdMbcAB"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "@cadit-app/silly-cat",
+  "version": "1.0.0",
+  "description": "yes",
+  "type": "module",
+  "main": "dist/images.jpeg.js",
+  "types": "dist/images.jpeg.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/images.jpeg.js",
+      "types": "./dist/images.jpeg.d.ts"
+    },
+    "./*": {
+      "import": "./dist/*.js",
+      "types": "./dist/*.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "bash -c 'output=$(tsc --noCheck 2>&1); echo \"$output\"; echo \"$output\" | grep -v \"error TS2742\" | grep -q \"error TS\" && exit 1 || exit 0'",
+    "build:3mf": "manifold-cad images.jpeg.js output.3mf",
+    "build:glb": "manifold-cad images.jpeg.js output.glb"
+  },
+  "author": "cadit-user",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CADit-app/silly-cat"
+  },
+  "dependencies": {},
+  "peerDependencies": {},
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
